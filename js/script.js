@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize AOS
+    AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100,
+        easing: 'ease-in-out',
+    });
+
     const offcanvas = document.getElementById('mobileNavOffcanvas');
     const toggleButton = document.querySelector('[data-bs-target="#mobileNavOffcanvas"]');
     const closeButton = offcanvas ? offcanvas.querySelector('.btn-close') : null;
