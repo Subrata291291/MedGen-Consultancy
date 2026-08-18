@@ -24,7 +24,7 @@
 }
 
 html, body {
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 body {
@@ -84,17 +84,15 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 
 /* Navigation */
 .navbar-glass {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--theme-border);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    padding: 20px 0px;
     width: 100%;
-    z-index: 1030;
 }
-
 .announcement-bar {
     position: relative;
     z-index: 1020;
@@ -452,9 +450,6 @@ body.offcanvas-open::before {
     }
     #faqAccordion span {
         font-size: 16px;
-    }
-    .navbar-glass {
-        min-height: 66px;
     }
     .py-section {
         padding-top: 50px;
