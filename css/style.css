@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     position: sticky;
     top: 0;
     z-index: 1030;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--theme-border);
     padding: 20px 0px;
@@ -393,6 +393,135 @@ body.offcanvas-open::before {
     display: none;
 }
 
+/* Subpage Hero & Styles */
+.page-hero {
+    position: relative;
+    padding-top: 140px;
+    padding-bottom: 80px;
+    background: linear-gradient(135deg, #fcf9f8 0%, #f6f3f2 60%, #fff5f3 100%);
+    border-bottom: 1px solid var(--theme-border);
+    overflow: hidden;
+}
+
+.page-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(var(--theme-primary-fixed-dim) 0.75px, transparent 0.75px);
+    background-size: 24px 24px;
+    opacity: 0.15;
+    pointer-events: none;
+}
+
+.badge-theme-light {
+    background-color: rgba(245, 106, 74, 0.12);
+    color: var(--bs-primary);
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 50rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.service-card, .solution-card, .industry-card {
+    background: #ffffff;
+    border: 1px solid var(--theme-border);
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.service-card:hover, .solution-card:hover, .industry-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(171, 53, 26, 0.08);
+    border-color: rgba(245, 106, 74, 0.4);
+}
+
+.icon-box-primary {
+    width: 54px;
+    height: 54px;
+    border-radius: 0.75rem;
+    background-color: rgba(245, 106, 74, 0.12);
+    color: var(--bs-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-check-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.feature-check-list li {
+    position: relative;
+    padding-left: 1.75rem;
+    margin-bottom: 0.75rem;
+    color: var(--bs-secondary);
+}
+
+.feature-check-list li::before {
+    content: "check_circle";
+    font-family: 'Material Symbols Outlined';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: var(--theme-primary-container);
+    font-size: 1.1rem;
+}
+
+.contact-info-card {
+    background: #ffffff;
+    border: 1px solid var(--theme-border);
+    border-radius: 1rem;
+    padding: 1.75rem;
+    transition: all 0.3s ease;
+}
+
+.contact-info-card:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.active-nav {
+    color: var(--bs-primary) !important;
+    border-bottom: 2px solid var(--bs-primary);
+}
+
+/* CTA Section Styles */
+.cta-banner {
+    background: linear-gradient(135deg, var(--bs-primary) 0%, #891d03 100%);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.cta-image-wrapper {
+    position: relative;
+    min-height: 340px;
+    overflow: hidden;
+}
+
+.cta-image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, var(--bs-primary) 0%, rgba(171, 53, 26, 0.4) 35%, transparent 100%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.cta-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    transition: transform 0.6s ease;
+}
+
+.cta-banner:hover .cta-image-wrapper img {
+    transform: scale(1.05);
+}
+
 @media (max-width: 991px) {
     .navbar-glass {
         margin-top: 0;
@@ -438,6 +567,12 @@ body.offcanvas-open::before {
     }
     .premium-footer .row.g-5 {
         row-gap: 2.5rem;
+    }
+    .cta-image-wrapper {
+        min-height: 280px;
+    }
+    .cta-image-overlay {
+        background: linear-gradient(to bottom, var(--bs-primary) 0%, rgba(171, 53, 26, 0.2) 40%, transparent 100%);
     }
 }
 
@@ -532,13 +667,19 @@ body.offcanvas-open::before {
     .premium-footer { margin-top: 28px; }
 }
 
+
 @media (max-width: 575px) {
     .announcement-bar {
         font-size: 0.68rem;
         letter-spacing: 0.06em;
         padding: 0.55rem 0.7rem;
     }
-
+    .page-hero {
+        padding-top: 50px;
+    }
+    .page-hero p {
+        font-size: 1rem;
+    }
     .hero-section {
         min-height: 580px;
         padding-top: 110px;
@@ -556,3 +697,4 @@ body.offcanvas-open::before {
         display: none;
     }
 }
+

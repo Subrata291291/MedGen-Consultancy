@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services | MedGen Consultancy - Comprehensive Healthcare Services</title>
+<!-- Bootstrap 5 CSS -->
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Swiper CSS -->
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+<!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Announcement Bar -->
+<div class="announcement-bar bg-inverse-surface py-2 text-center small tracking-widest text-uppercase">
+    US Healthcare Expertise | Payer &amp; Provider Solutions | HIPAA-Compliant Operations
+</div>
+
+<!-- Offcanvas Mobile Menu -->
+<div aria-labelledby="mobileNavLabel" class="offcanvas offcanvas-end offcanvas-menu" id="mobileNavOffcanvas" tabindex="-1">
+  <div class="offcanvas-header">
+    <a class="navbar-brand font-heading fw-bold d-flex align-items-center gap-2 mb-0" href="index.html">
+      <span class="material-symbols-outlined text-primary-theme fs-3">medical_services</span>
+      MedGen Consultancy
+    </a>
+    <button aria-label="Close" class="btn-close" data-bs-dismiss="offcanvas" type="button"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav gap-1">
+      <li class="nav-item"><a class="nav-link mobile-nav-link" href="index.html">Home</a></li>
+      <li class="nav-item">
+        <button class="nav-link mobile-nav-link text-primary-theme mobile-accordion-toggle" type="button" aria-expanded="true" data-target="servicesMobileMenu">
+          <span>Services</span>
+          <span class="material-symbols-outlined fs-6">expand_more</span>
+        </button>
+        <div class="mobile-submenu" id="servicesMobileMenu">
+          <a href="services.html#payer-services">Payer Services</a>
+          <a href="services.html#provider-services">Provider Services</a>
+          <a href="services.html#tech-services">Healthcare Technology Services</a>
+          <a href="services.html">All Services</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link mobile-nav-link mobile-accordion-toggle" type="button" aria-expanded="false" data-target="solutionsMobileMenu">
+          <span>Solutions</span>
+          <span class="material-symbols-outlined fs-6">expand_more</span>
+        </button>
+        <div class="mobile-submenu" id="solutionsMobileMenu" hidden>
+          <a href="solutions.html#claims">Claims</a>
+          <a href="solutions.html#benefits">Benefits</a>
+          <a href="solutions.html#provider-network">Provider &amp; Network</a>
+          <a href="solutions.html#testing-qa">Testing &amp; QA</a>
+          <a href="solutions.html#healthcare-it">Healthcare IT</a>
+          <a href="solutions.html#rcm">RCM</a>
+          <a href="solutions.html#data-analytics">Data &amp; Analytics</a>
+          <a href="solutions.html#managed-services">Managed Services</a>
+          <a href="solutions.html">All Solutions</a>
+        </div>
+      </li>
+      <li class="nav-item"><a class="nav-link mobile-nav-link" href="industries.html">Industries</a></li>
+      <li class="nav-item"><a class="nav-link mobile-nav-link" href="about.html">About Us</a></li>
+      <li class="nav-item"><a class="nav-link mobile-nav-link" href="resources.html">Resources</a></li>
+      <li class="nav-item"><a class="nav-link mobile-nav-link" href="contact.html">Contact Us</a></li>
+    </ul>
+
+    <div class="d-grid gap-2 mt-4">
+      <a class="btn btn-primary-theme rounded-3 py-2" href="contact.html">Book a Free Consultation</a>
+      <a class="btn btn-outline-theme rounded-3 py-2" href="contact.html">Contact Us</a>
+    </div>
+  </div>
+</div>
+
+<!-- TopNavBar -->
+<header class="navbar navbar-expand-lg navbar-glass">
+<div class="container-xl">
+<!-- Logo -->
+<a class="navbar-brand font-heading fw-bold d-flex align-items-center gap-2" href="index.html">
+<span class="material-symbols-outlined text-primary-theme fs-3">medical_services</span>
+MedGen Consultancy
+</a>
+
+<!-- Mobile Toggle -->
+<button aria-controls="mobileNavOffcanvas" aria-label="Open menu" class="navbar-toggler border-0 d-lg-none" data-bs-target="#mobileNavOffcanvas" data-bs-toggle="offcanvas" type="button">
+<span class="material-symbols-outlined fs-2">menu</span>
+</button>
+
+<!-- Nav Content -->
+<div class="collapse navbar-collapse justify-content-center d-none d-lg-flex" id="mainNav">
+<ul class="navbar-nav align-items-center gap-3">
+<li class="nav-item">
+<a class="nav-link text-secondary-theme fw-bold" href="index.html">Home</a>
+</li>
+<!-- Services Mega Menu -->
+<li class="nav-item mega-menu-wrapper h-100 d-flex align-items-center">
+<a class="nav-link text-primary-theme fw-bold active-nav d-flex align-items-center gap-1" href="services.html">
+Services <span class="material-symbols-outlined fs-6">expand_more</span>
+</a>
+<div class="mega-menu-content text-start">
+<div class="p-4">
+<div class="row g-4">
+<div class="col-4">
+<h6 class="fw-bold mb-3 d-flex align-items-center gap-2 text-primary-theme">
+<span class="material-symbols-outlined fs-5">domain</span> Payer Services
+</h6>
+<ul class="list-unstyled d-flex flex-column gap-2 small">
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#payer-services"><span class="me-2">•</span> Claims &amp; Adjudication</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#payer-services"><span class="me-2">•</span> Benefits Configuration</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#payer-services"><span class="me-2">•</span> Provider &amp; Network Config</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#payer-services"><span class="me-2">•</span> Claims Testing &amp; Validation</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#payer-services"><span class="me-2">•</span> Payer Operations</a></li>
+</ul>
+</div>
+<div class="col-4">
+<h6 class="fw-bold mb-3 d-flex align-items-center gap-2 text-primary-theme">
+<span class="material-symbols-outlined fs-5">local_hospital</span> Provider Services
+</h6>
+<ul class="list-unstyled d-flex flex-column gap-2 small">
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#provider-services"><span class="me-2">•</span> Medical Billing &amp; Coding</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#provider-services"><span class="me-2">•</span> Claims Submission</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#provider-services"><span class="me-2">•</span> Denial Management</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#provider-services"><span class="me-2">•</span> AR &amp; Payment Posting</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#provider-services"><span class="me-2">•</span> Credentialing &amp; RCM</a></li>
+</ul>
+</div>
+<div class="col-4">
+<h6 class="fw-bold mb-3 d-flex align-items-center gap-2 text-primary-theme">
+<span class="material-symbols-outlined fs-5">terminal</span> Technology Services
+</h6>
+<ul class="list-unstyled d-flex flex-column gap-2 small">
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#tech-services"><span class="me-2">•</span> Business Analysis</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#tech-services"><span class="me-2">•</span> Application Support</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#tech-services"><span class="me-2">•</span> QA &amp; Testing</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#tech-services"><span class="me-2">•</span> Data Validation</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#tech-services"><span class="me-2">•</span> Process Optimization</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="bg-surface-muted p-3 text-center border-top border-light">
+<a class="text-decoration-none fw-bold d-flex justify-content-center align-items-center gap-2" href="services.html" style="color: var(--theme-primary-container);">
+Explore All Services <span class="material-symbols-outlined fs-6">arrow_forward</span>
+</a>
+</div>
+</div>
+</li>
+<!-- Solutions Mega Menu -->
+<li class="nav-item mega-menu-wrapper h-100 d-flex align-items-center">
+<a class="nav-link text-secondary-theme fw-bold d-flex align-items-center gap-1" href="solutions.html">
+Solutions <span class="material-symbols-outlined fs-6">expand_more</span>
+</a>
+<div class="mega-menu-content mega-menu-solutions text-start" style="width: 780px;">
+<div class="p-4">
+<div class="row g-4">
+<div class="col-4">
+<h6 class="fw-bold mb-3 d-flex align-items-center gap-2 text-primary-theme">
+<span class="material-symbols-outlined fs-5">shield</span> Payer Solutions
+</h6>
+<ul class="list-unstyled d-flex flex-column gap-2 small">
+<li><a class="text-decoration-none text-secondary-theme" href="solutions.html#claims"><span class="me-2">•</span> Claims Administration</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="solutions.html#benefits"><span class="me-2">•</span> Benefits Configuration</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="solutions.html#provider-network"><span class="me-2">•</span> Provider &amp; Network</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="solutions.html#testing-qa"><span class="me-2">•</span> Claims Testing &amp; QA</a></li>
+</ul>
+</div>
+<div class="col-4">
+<h6 class="fw-bold mb-3 d-flex align-items-center gap-2 text-primary-theme">
+<span class="material-symbols-outlined fs-5">medication</span> Provider Solutions
+</h6>
+<ul class="list-unstyled d-flex flex-column gap-2 small">
+<li><a class="text-decoration-none text-secondary-theme" href="solutions.html#rcm"><span class="me-2">•</span> Revenue Cycle Management</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="solutions.html#rcm"><span class="me-2">•</span> Medical Billing &amp; Coding</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="solutions.html#rcm"><span class="me-2">•</span> Claims &amp; Denial Management</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="solutions.html#managed-services"><span class="me-2">•</span> Practice Support</a></li>
+</ul>
+</div>
+<div class="col-4">
+<h6 class="fw-bold mb-3 d-flex align-items-center gap-2 text-primary-theme">
+<span class="material-symbols-outlined fs-5">memory</span> Tech &amp; Digital
+</h6>
+<ul class="list-unstyled d-flex flex-column gap-2 small">
+<li><a class="text-decoration-none text-secondary-theme" href="solutions.html#healthcare-it"><span class="me-2">•</span> Healthcare IT &amp; App Support</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="solutions.html#data-analytics"><span class="me-2">•</span> Data &amp; Analytics</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="solutions.html#healthcare-it"><span class="me-2">•</span> Process Automation</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="solutions.html#managed-services"><span class="me-2">•</span> Managed Operations</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="bg-surface-muted p-3 text-center border-top border-light">
+<a class="text-decoration-none fw-bold d-flex justify-content-center align-items-center gap-2" href="solutions.html" style="color: var(--theme-primary-container);">
+Explore All Solutions <span class="material-symbols-outlined fs-6">arrow_forward</span>
+</a>
+</div>
+</div>
+</li>
+<li class="nav-item"><a class="nav-link text-secondary-theme fw-bold" href="industries.html">Industries</a></li>
+<li class="nav-item"><a class="nav-link text-secondary-theme fw-bold" href="about.html">About Us</a></li>
+<li class="nav-item"><a class="nav-link text-secondary-theme fw-bold" href="resources.html">Resources</a></li>
+</ul>
+</div>
+<!-- Actions -->
+<div class="d-none d-lg-flex align-items-center gap-3">
+<a class="text-decoration-none text-secondary-theme fw-bold" href="contact.html">Contact Us</a>
+<a class="btn btn-primary-theme rounded-3 px-4 py-2" href="contact.html">Book a Free Consultation</a>
+</div>
+</div>
+</header>
+
+<!-- Services Hero Header -->
+<section class="page-hero">
+<div class="page-hero-overlay"></div>
+<div class="container-xl position-relative z-index-1 text-center">
+<span class="badge-theme-light mb-3" data-aos="fade-up">
+<span class="material-symbols-outlined fs-6">design_services</span> End-to-End Capabilities
+</span>
+<h1 class="display-4 font-heading fw-bold mb-4" data-aos="fade-up" data-aos-delay="100">
+    Comprehensive Healthcare Services
+</h1>
+<p class="lead text-secondary-theme mx-auto max-w-75 mb-4" style="max-width: 860px;" data-aos="fade-up" data-aos-delay="200">
+    MedGen provides end-to-end healthcare services designed to support critical payer, provider and healthcare technology operations. Our teams can operate as an extension of your organization, supporting defined processes, specialized functions or complete operational workflows.
+</p>
+<div class="p-4 bg-white rounded-2xl border shadow-sm mx-auto text-start mb-4" style="max-width: 900px;" data-aos="fade-up" data-aos-delay="300">
+    <p class="small text-secondary-theme mb-0">
+        <strong class="text-dark">Our Scope:</strong> Capabilities include Claims &amp; Adjudication Support, Benefits Configuration, Provider &amp; Network Configuration, Claims Testing &amp; QA, Healthcare Application Support, Medical Billing, Medical Coding, Denial Management, AR Management and Revenue Cycle Management. We combine experienced healthcare professionals with structured processes, quality controls and technology-enabled workflows to deliver consistent, scalable and SLA-driven services.
+    </p>
+</div>
+<div class="d-flex justify-content-center gap-3" data-aos="fade-up" data-aos-delay="400">
+    <a class="btn btn-primary-theme rounded-3 px-4 py-2" href="#payer-services">Payer Services</a>
+    <a class="btn btn-outline-theme rounded-3 px-4 py-2" href="#provider-services">Provider Services</a>
+    <a class="btn btn-outline-theme rounded-3 px-4 py-2" href="#tech-services">Technology Services</a>
+</div>
+</div>
+</section>
+
+<!-- Division 1: Payer Services -->
+<section class="py-section" id="payer-services">
+<div class="container-xl">
+<div class="d-flex align-items-center gap-3 mb-5" data-aos="fade-up">
+<div class="icon-box-primary">
+    <span class="material-symbols-outlined fs-2">domain</span>
+</div>
+<div>
+    <span class="badge-theme-light">Health Plans &amp; Payers</span>
+    <h2 class="display-6 font-heading mb-0">Payer Services</h2>
+</div>
+</div>
+
+<div class="row g-4">
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+<div class="service-card">
+    <div class="text-primary-theme mb-3">
+        <span class="material-symbols-outlined fs-2">fact_check</span>
+    </div>
+    <h4 class="fs-5 mb-2">Claims Configuration &amp; Adjudication Support</h4>
+    <p class="small text-secondary-theme mb-3">Expert setup, logic verification, and operational support for claims adjudication rules to ensure clean, accurate processing.</p>
+    <ul class="feature-check-list small">
+        <li>Adjudication rule setup</li>
+        <li>Automated logic checks</li>
+        <li>Exception handling support</li>
+    </ul>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+<div class="service-card">
+    <div class="text-primary-theme mb-3">
+        <span class="material-symbols-outlined fs-2">settings_suggest</span>
+    </div>
+    <h4 class="fs-5 mb-2">Benefits Configuration</h4>
+    <p class="small text-secondary-theme mb-3">Precise benefit plan structure configuration, co-pay matrix validation, and coverage rules setup within core payer platforms.</p>
+    <ul class="feature-check-list small">
+        <li>Benefit matrix configuration</li>
+        <li>Co-insurance &amp; deductible logic</li>
+        <li>Annual plan change updates</li>
+    </ul>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+<div class="service-card">
+    <div class="text-primary-theme mb-3">
+        <span class="material-symbols-outlined fs-2">badge</span>
+    </div>
+    <h4 class="fs-5 mb-2">Provider &amp; Network Configuration</h4>
+    <p class="small text-secondary-theme mb-3">Configuring provider contracts, fee schedules, tiering rules, and network directory data with high precision.</p>
+    <ul class="feature-check-list small">
+        <li>Contract fee schedule loading</li>
+        <li>Network tiering setup</li>
+        <li>Provider data maintenance</li>
+    </ul>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+<div class="service-card">
+    <div class="text-primary-theme mb-3">
+        <span class="material-symbols-outlined fs-2">checklist</span>
+    </div>
+    <h4 class="fs-5 mb-2">Claims Testing &amp; Validation</h4>
+    <p class="small text-secondary-theme mb-3">End-to-end scenario testing, regression suites, and claims validation prior to migration or system updates.</p>
+    <ul class="feature-check-list small">
+        <li>Scenario-based claims testing</li>
+        <li>Regression &amp; UAT testing</li>
+        <li>Pre-adjudication audit</li>
+    </ul>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+<div class="service-card">
+    <div class="text-primary-theme mb-3">
+        <span class="material-symbols-outlined fs-2">corporate_fare</span>
+    </div>
+    <h4 class="fs-5 mb-2">Payer Operations</h4>
+    <p class="small text-secondary-theme mb-3">Dedicated support for administrative payer workflows, eligibility verifications, and operational back-office processing.</p>
+    <ul class="feature-check-list small">
+        <li>Member eligibility operations</li>
+        <li>Back-office workflow support</li>
+        <li>Regulatory compliance checks</li>
+    </ul>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+<div class="service-card">
+    <div class="text-primary-theme mb-3">
+        <span class="material-symbols-outlined fs-2">dataset</span>
+    </div>
+    <h4 class="fs-5 mb-2">Provider Data Support &amp; App Support</h4>
+    <p class="small text-secondary-theme mb-3">Provider demographic auditing, NPI/TIN updates, and 24/7 technical production support for core payer apps.</p>
+    <ul class="feature-check-list small">
+        <li>Provider directory hygiene</li>
+        <li>Core system production support</li>
+        <li>Data validation pipelines</li>
+    </ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Division 2: Provider Services -->
+<section class="py-section bg-surface-muted" id="provider-services">
+<div class="container-xl">
+<div class="d-flex align-items-center gap-3 mb-5" data-aos="fade-up">
+<div class="icon-box-primary">
+    <span class="material-symbols-outlined fs-2">local_hospital</span>
+</div>
+<div>
+    <span class="badge-theme-light">Practices, Clinics &amp; Hospitals</span>
+    <h2 class="display-6 font-heading mb-0">Provider Services</h2>
+</div>
+</div>
+
+<div class="row g-4">
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+<div class="service-card">
+    <div class="text-primary-theme mb-3">
+        <span class="material-symbols-outlined fs-2">receipt</span>
+    </div>
+    <h4 class="fs-5 mb-2">Medical Billing</h4>
+    <p class="small text-secondary-theme mb-3">Complete charge capture, patient billing, electronic invoice generation, and insurance claim processing.</p>
+    <ul class="feature-check-list small">
+        <li>Charge entry &amp; verification</li>
+        <li>Electronic claim generation</li>
+        <li>Patient billing support</li>
+    </ul>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+<div class="service-card">
+    <div class="text-primary-theme mb-3">
+        <span class="material-symbols-outlined fs-2">code</span>
+    </div>
+    <h4 class="fs-5 mb-2">Medical Coding</h4>
+    <p class="small text-secondary-theme mb-3">Certified AAPC/AHIMA coders providing ICD-10, CPT, and HCPCS coding with high precision and compliance checks.</p>
+    <ul class="feature-check-list small">
+        <li>ICD-10 &amp; CPT chart coding</li>
+        <li>HCC &amp; Risk Adjustment coding</li>
+        <li>Regular coding compliance audits</li>
+    </ul>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+<div class="service-card">
+    <div class="text-primary-theme mb-3">
+        <span class="material-symbols-outlined fs-2">send</span>
+    </div>
+    <h4 class="fs-5 mb-2">Claims Submission</h4>
+    <p class="small text-secondary-theme mb-3">97%+ clean claim rate with rapid 24-hour turnaround and clearinghouse scrubbers for maximum reimbursement.</p>
+    <ul class="feature-check-list small">
+        <li>24-Hour turnaround time</li>
+        <li>Clearinghouse error scrubbing</li>
+        <li>Rejection tracking &amp; re-submission</li>
+    </ul>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+<div class="service-card">
+    <div class="text-primary-theme mb-3">
+        <span class="material-symbols-outlined fs-2">assignment_return</span>
+    </div>
+    <h4 class="fs-5 mb-2">Denial Management</h4>
+    <p class="small text-secondary-theme mb-3">Systematic denial analysis, appeal writing, root cause correction, and preventative workflow optimization.</p>
+    <ul class="feature-check-list small">
+        <li>Denial trend categorization</li>
+        <li>Clinical &amp; technical appeals</li>
+        <li>Upstream process fix</li>
+    </ul>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+<div class="service-card">
+    <div class="text-primary-theme mb-3">
+        <span class="material-symbols-outlined fs-2">payments</span>
+    </div>
+    <h4 class="fs-5 mb-2">AR &amp; Payment Posting</h4>
+    <p class="small text-secondary-theme mb-3">Aging Accounts Receivable recovery, ERA/EOB posting, patient payment reconciliation, and ledger balance management.</p>
+    <ul class="feature-check-list small">
+        <li>30-60-90+ Day AR follow-up</li>
+        <li>ERA &amp; manual EOB posting</li>
+        <li>Credit balance reconciliation</li>
+    </ul>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+<div class="service-card">
+    <div class="text-primary-theme mb-3">
+        <span class="material-symbols-outlined fs-2">verified_user</span>
+    </div>
+    <h4 class="fs-5 mb-2">Credentialing &amp; RCM</h4>
+    <p class="small text-secondary-theme mb-3">Provider payer enrollment, CAQH maintenance, re-credentialing, and full end-to-end Revenue Cycle Management.</p>
+    <ul class="feature-check-list small">
+        <li>Commercial &amp; Govt enrollment</li>
+        <li>CAQH profile management</li>
+        <li>Total RCM performance tracking</li>
+    </ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Division 3: Healthcare Technology Services -->
+<section class="py-section" id="tech-services">
+<div class="container-xl">
+<div class="d-flex align-items-center gap-3 mb-5" data-aos="fade-up">
+<div class="icon-box-primary">
+    <span class="material-symbols-outlined fs-2">terminal</span>
+</div>
+<div>
+    <span class="badge-theme-light">IT &amp; Digital Solutions</span>
+    <h2 class="display-6 font-heading mb-0">Healthcare Technology Services</h2>
+</div>
+</div>
+
+<div class="row g-4">
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+<div class="service-card">
+    <div class="text-primary-theme mb-3">
+        <span class="material-symbols-outlined fs-2">analytics</span>
+    </div>
+    <h4 class="fs-5 mb-2">Business Analysis</h4>
+    <p class="small text-secondary-theme mb-3">Requirement gathering, healthcare workflow mapping, system gap analysis, and functional specs development.</p>
+    <ul class="feature-check-list small">
+        <li>Process workflow mapping</li>
+        <li>BRD &amp; FRD documentation</li>
+        <li>Gap &amp; impact analysis</li>
+    </ul>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+<div class="service-card">
+    <div class="text-primary-theme mb-3">
+        <span class="material-symbols-outlined fs-2">laptop_chromebook</span>
+    </div>
+    <h4 class="fs-5 mb-2">Application Support</h4>
+    <p class="small text-secondary-theme mb-3">Tier 1-3 technical support, application troubleshooting, system configuration updates, and SLA maintenance.</p>
+    <ul class="feature-check-list small">
+        <li>Tier 1, 2 &amp; 3 user support</li>
+        <li>Incident &amp; issue management</li>
+        <li>Platform configuration updates</li>
+    </ul>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+<div class="service-card">
+    <div class="text-primary-theme mb-3">
+        <span class="material-symbols-outlined fs-2">bug_report</span>
+    </div>
+    <h4 class="fs-5 mb-2">QA &amp; Testing</h4>
+    <p class="small text-secondary-theme mb-3">Functional testing, system integration testing (SIT), automated regression, and User Acceptance Testing (UAT).</p>
+    <ul class="feature-check-list small">
+        <li>Automated test scripts</li>
+        <li>Integration &amp; API testing</li>
+        <li>UAT coordination &amp; signoff</li>
+    </ul>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+<div class="service-card">
+    <div class="text-primary-theme mb-3">
+        <span class="material-symbols-outlined fs-2">table_chart</span>
+    </div>
+    <h4 class="fs-5 mb-2">Data Validation</h4>
+    <p class="small text-secondary-theme mb-3">Data cleansing, EDI transaction validation (837, 835, 270/271, 834), migration verification, and data integrity checks.</p>
+    <ul class="feature-check-list small">
+        <li>EDI 837/835/834 validation</li>
+        <li>Data migration audit</li>
+        <li>Integrity &amp; reconciliation checks</li>
+    </ul>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+<div class="service-card">
+    <div class="text-primary-theme mb-3">
+        <span class="material-symbols-outlined fs-2">dns</span>
+    </div>
+    <h4 class="fs-5 mb-2">Production Support</h4>
+    <p class="small text-secondary-theme mb-3">Round-the-clock monitoring, job batch management, release deployment verification, and system stability maintenance.</p>
+    <ul class="feature-check-list small">
+        <li>24/7 Production monitoring</li>
+        <li>Batch job execution tracking</li>
+        <li>Release deployment support</li>
+    </ul>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+<div class="service-card">
+    <div class="text-primary-theme mb-3">
+        <span class="material-symbols-outlined fs-2">auto_awesome</span>
+    </div>
+    <h4 class="fs-5 mb-2">Process Optimization</h4>
+    <p class="small text-secondary-theme mb-3">Identifying operational bottlenecks, implementing workflow automation, reducing manual touchpoints, and driving efficiency.</p>
+    <ul class="feature-check-list small">
+        <li>RPA &amp; workflow automation</li>
+        <li>Bottleneck elimination</li>
+        <li>SLA &amp; quality metric tracking</li>
+    </ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Delivery Models Section -->
+<section class="py-section bg-gradient-premium">
+<div class="container-xl">
+<div class="text-center mb-5" data-aos="fade-up">
+<span class="badge-theme-light mb-2">Flexible Engagement</span>
+<h2 class="display-6 font-heading">How We Deliver Our Services</h2>
+<p class="lead text-secondary-theme mx-auto" style="max-width: 700px;">Tailored operational models built to seamlessly fit your business structure.</p>
+</div>
+
+<div class="row g-4">
+<div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+<div class="bg-white p-4 rounded-2xl border shadow-sm h-100">
+<div class="d-flex align-items-center gap-3 mb-3">
+    <span class="material-symbols-outlined text-primary-theme fs-2">group_add</span>
+    <h4 class="fs-5 mb-0">Dedicated Team Extension</h4>
+</div>
+<p class="small text-secondary-theme mb-0">Our specialists operate as a seamless extension of your in-house team, working directly within your workflows, tools, and compliance frameworks.</p>
+</div>
+</div>
+
+<div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+<div class="bg-white p-4 rounded-2xl border shadow-sm h-100">
+<div class="d-flex align-items-center gap-3 mb-3">
+    <span class="material-symbols-outlined text-primary-theme fs-2">published_with_changes</span>
+    <h4 class="fs-5 mb-0">Managed Operations</h4>
+</div>
+<p class="small text-secondary-theme mb-0">Full end-to-end management of specific processes (e.g., Denial Recovery or Benefits Configuration) with transparent reporting and strict SLA metrics.</p>
+</div>
+</div>
+
+<div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+<div class="bg-white p-4 rounded-2xl border shadow-sm h-100">
+<div class="d-flex align-items-center gap-3 mb-3">
+    <span class="material-symbols-outlined text-primary-theme fs-2">task_alt</span>
+    <h4 class="fs-5 mb-0">Specialized Project Support</h4>
+</div>
+<p class="small text-secondary-theme mb-0">Targeted support for system migrations, claims testing cycles, annual benefit configuration updates, or credentialing backlog clearance.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA Section -->
+<section class="container-xl py-section">
+<div class="cta-banner rounded-3xl overflow-hidden position-relative shadow-lg" data-aos="zoom-in">
+<div class="row g-0 align-items-stretch">
+<div class="col-lg-7 p-4 p-md-5 text-white position-relative z-index-2 d-flex flex-column justify-content-center">
+<p class="fw-bold text-uppercase tracking-widest mb-3 text-white-50 small">PARTNER WITH MEDGEN</p>
+<h2 class="display-7 font-heading mb-4">Need Dedicated Healthcare Operational Support?</h2>
+<p class="mb-4 text-white-50">Speak with our healthcare domain experts today to structure an SLA-driven service solution tailored to your needs.</p>
+<div class="d-flex gap-3 flex-wrap">
+<a class="btn btn-light text-primary-theme fw-bold px-4 py-2 rounded-3 shadow-sm" href="contact.html">Book a Consultation</a>
+<a class="btn btn-outline-light fw-bold px-4 py-2 rounded-3" href="solutions.html">View Solutions</a>
+</div>
+</div>
+<div class="col-lg-5 position-relative cta-image-wrapper">
+<div class="cta-image-overlay"></div>
+<img alt="Healthcare operational team" class="position-absolute inset-0" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&amp;fit=crop&amp;w=1000&amp;q=80"/>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Premium Footer -->
+<footer class="premium-footer py-5">
+<div class="container-xl pt-4">
+<div class="row g-5 mb-5">
+<!-- Brand Column -->
+<div class="col-lg-4 col-12">
+<a class="text-decoration-none text-white fs-3 font-heading fw-bold d-flex align-items-center gap-2 mb-4" href="index.html">
+<span class="material-symbols-outlined fs-2" style="color: var(--theme-primary-container);">medical_services</span>
+MedGen Consultancy
+</a>
+<p class="small mb-4">
+US Healthcare Expertise. Payer &amp; Provider Solutions. Technology-Enabled Operations. We optimize healthcare operations and revenue cycles for modern payers and providers across the US ecosystem.
+</p>
+<div class="d-flex gap-3">
+<a class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center text-white border-0 bg-dark" href="#" style="width: 40px; height: 40px;">
+<span class="material-symbols-outlined fs-6">share</span>
+</a>
+<a class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center text-white border-0 bg-dark" href="#" style="width: 40px; height: 40px;">
+<span class="material-symbols-outlined fs-6">link</span>
+</a>
+<a class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center text-white border-0 bg-dark" href="contact.html" style="width: 40px; height: 40px;">
+<span class="material-symbols-outlined fs-6">mail</span>
+</a>
+</div>
+</div>
+<!-- Links Columns -->
+<div class="col-lg-2 col-md-4 col-6">
+<h5 class="text-white mb-4 fs-6 d-flex align-items-center gap-2">
+Company
+</h5>
+<ul class="list-unstyled d-flex flex-column gap-3 small fw-bold">
+<li><a class="text-decoration-none" href="about.html">About Us</a></li>
+<li><a class="text-decoration-none" href="services.html">Services</a></li>
+<li><a class="text-decoration-none" href="solutions.html">Solutions</a></li>
+<li><a class="text-decoration-none" href="industries.html">Industries</a></li>
+<li><a class="text-decoration-none" href="resources.html">Resources</a></li>
+<li><a class="text-decoration-none" href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-4 col-6">
+<h5 class="text-white mb-4 fs-6 d-flex align-items-center gap-2">
+Services
+</h5>
+<ul class="list-unstyled d-flex flex-column gap-3 small fw-bold">
+<li><a class="text-decoration-none" href="services.html#payer-services">Payer Services</a></li>
+<li><a class="text-decoration-none" href="services.html#provider-services">Provider Services</a></li>
+<li><a class="text-decoration-none" href="services.html#tech-services">Healthcare IT</a></li>
+<li><a class="text-decoration-none" href="solutions.html#rcm">RCM &amp; Billing</a></li>
+</ul>
+</div>
+<!-- Newsletter -->
+<div class="col-lg-4 col-md-4">
+<h5 class="text-white mb-4 fs-6 d-flex align-items-center gap-2">
+Get a Free Audit
+</h5>
+<p class="small mb-3">Uncover hidden revenue leaks &amp; operational efficiency gains with our comprehensive healthcare audit. No commitment required.</p>
+<form action="contact.html" method="get">
+<div class="input-group footer-newsletter-form">
+<input aria-label="Work Email Address" class="form-control bg-dark border-secondary text-white" placeholder="Work Email Address" required="" type="email"/>
+<button class="btn btn-primary-theme fw-bold px-4" type="submit">Request Audit</button>
+</div>
+</form>
+</div>
+</div>
+<!-- Legal Bottom -->
+<div class="footer-bottom border-top border-secondary pt-4 mt-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-4">
+<div class="footer-compliance d-flex gap-4">
+<div class="d-flex align-items-center gap-2 border border-secondary rounded px-3 py-1 small">
+<span class="material-symbols-outlined fs-6">verified_user</span>
+<span class="fw-bold">HIPAA Compliant</span>
+</div>
+<div class="d-flex align-items-center gap-2 border border-secondary rounded px-3 py-1 small">
+<span class="material-symbols-outlined fs-6">shield_locked</span>
+<span class="fw-bold">SOC2 Certified</span>
+</div>
+</div>
+<div class="footer-policy-links d-flex gap-4 small">
+<a class="text-decoration-none text-inherit" href="#">Privacy Policy</a>
+<a class="text-decoration-none text-inherit" href="#">Terms of Service</a>
+<a class="text-decoration-none text-inherit" href="#">Cookie Policy</a>
+<span>© 2026 MedGen Consultancy. All rights reserved.</span>
+</div>
+</div>
+</div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

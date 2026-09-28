@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us | MedGen Consultancy - Book a Free Consultation</title>
+<!-- Bootstrap 5 CSS -->
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Swiper CSS -->
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+<!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Announcement Bar -->
+<div class="announcement-bar bg-inverse-surface py-2 text-center small tracking-widest text-uppercase">
+    US Healthcare Expertise | Payer &amp; Provider Solutions | HIPAA-Compliant Operations
+</div>
+
+<!-- Offcanvas Mobile Menu -->
+<div aria-labelledby="mobileNavLabel" class="offcanvas offcanvas-end offcanvas-menu" id="mobileNavOffcanvas" tabindex="-1">
+  <div class="offcanvas-header">
+    <a class="navbar-brand font-heading fw-bold d-flex align-items-center gap-2 mb-0" href="index.html">
+      <span class="material-symbols-outlined text-primary-theme fs-3">medical_services</span>
+      MedGen Consultancy
+    </a>
+    <button aria-label="Close" class="btn-close" data-bs-dismiss="offcanvas" type="button"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav gap-1">
+      <li class="nav-item"><a class="nav-link mobile-nav-link" href="index.html">Home</a></li>
+      <li class="nav-item">
+        <button class="nav-link mobile-nav-link mobile-accordion-toggle" type="button" aria-expanded="false" data-target="servicesMobileMenu">
+          <span>Services</span>
+          <span class="material-symbols-outlined fs-6">expand_more</span>
+        </button>
+        <div class="mobile-submenu" id="servicesMobileMenu" hidden>
+          <a href="services.html#payer-services">Payer Services</a>
+          <a href="services.html#provider-services">Provider Services</a>
+          <a href="services.html#tech-services">Healthcare Technology Services</a>
+          <a href="services.html">All Services</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link mobile-nav-link mobile-accordion-toggle" type="button" aria-expanded="false" data-target="solutionsMobileMenu">
+          <span>Solutions</span>
+          <span class="material-symbols-outlined fs-6">expand_more</span>
+        </button>
+        <div class="mobile-submenu" id="solutionsMobileMenu" hidden>
+          <a href="solutions.html#claims">Claims</a>
+          <a href="solutions.html#benefits">Benefits</a>
+          <a href="solutions.html#provider-network">Provider &amp; Network</a>
+          <a href="solutions.html#testing-qa">Testing &amp; QA</a>
+          <a href="solutions.html#healthcare-it">Healthcare IT</a>
+          <a href="solutions.html#rcm">RCM</a>
+          <a href="solutions.html#data-analytics">Data &amp; Analytics</a>
+          <a href="solutions.html#managed-services">Managed Services</a>
+          <a href="solutions.html">All Solutions</a>
+        </div>
+      </li>
+      <li class="nav-item"><a class="nav-link mobile-nav-link" href="industries.html">Industries</a></li>
+      <li class="nav-item"><a class="nav-link mobile-nav-link" href="about.html">About Us</a></li>
+      <li class="nav-item"><a class="nav-link mobile-nav-link" href="resources.html">Resources</a></li>
+      <li class="nav-item"><a class="nav-link mobile-nav-link text-primary-theme" href="contact.html">Contact Us</a></li>
+    </ul>
+
+    <div class="d-grid gap-2 mt-4">
+      <a class="btn btn-primary-theme rounded-3 py-2" href="contact.html">Book a Free Consultation</a>
+      <a class="btn btn-outline-theme rounded-3 py-2" href="contact.html">Contact Us</a>
+    </div>
+  </div>
+</div>
+
+<!-- TopNavBar -->
+<header class="navbar navbar-expand-lg navbar-glass">
+<div class="container-xl">
+<!-- Logo -->
+<a class="navbar-brand font-heading fw-bold d-flex align-items-center gap-2" href="index.html">
+<span class="material-symbols-outlined text-primary-theme fs-3">medical_services</span>
+MedGen Consultancy
+</a>
+
+<!-- Mobile Toggle -->
+<button aria-controls="mobileNavOffcanvas" aria-label="Open menu" class="navbar-toggler border-0 d-lg-none" data-bs-target="#mobileNavOffcanvas" data-bs-toggle="offcanvas" type="button">
+<span class="material-symbols-outlined fs-2">menu</span>
+</button>
+
+<!-- Nav Content -->
+<div class="collapse navbar-collapse justify-content-center d-none d-lg-flex" id="mainNav">
+<ul class="navbar-nav align-items-center gap-3">
+<li class="nav-item">
+<a class="nav-link text-secondary-theme fw-bold" href="index.html">Home</a>
+</li>
+<!-- Services Mega Menu -->
+<li class="nav-item mega-menu-wrapper h-100 d-flex align-items-center">
+<a class="nav-link text-secondary-theme fw-bold d-flex align-items-center gap-1" href="services.html">
+Services <span class="material-symbols-outlined fs-6">expand_more</span>
+</a>
+<div class="mega-menu-content text-start">
+<div class="p-4">
+<div class="row g-4">
+<div class="col-4">
+<h6 class="fw-bold mb-3 d-flex align-items-center gap-2 text-primary-theme">
+<span class="material-symbols-outlined fs-5">domain</span> Payer Services
+</h6>
+<ul class="list-unstyled d-flex flex-column gap-2 small">
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#payer-services"><span class="me-2">•</span> Claims &amp; Adjudication</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#payer-services"><span class="me-2">•</span> Benefits Configuration</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#payer-services"><span class="me-2">•</span> Provider &amp; Network Config</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#payer-services"><span class="me-2">•</span> Claims Testing &amp; Validation</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#payer-services"><span class="me-2">•</span> Payer Operations</a></li>
+</ul>
+</div>
+<div class="col-4">
+<h6 class="fw-bold mb-3 d-flex align-items-center gap-2 text-primary-theme">
+<span class="material-symbols-outlined fs-5">local_hospital</span> Provider Services
+</h6>
+<ul class="list-unstyled d-flex flex-column gap-2 small">
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#provider-services"><span class="me-2">•</span> Medical Billing &amp; Coding</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#provider-services"><span class="me-2">•</span> Claims Submission</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#provider-services"><span class="me-2">•</span> Denial Management</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#provider-services"><span class="me-2">•</span> AR &amp; Payment Posting</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#provider-services"><span class="me-2">•</span> Credentialing &amp; RCM</a></li>
+</ul>
+</div>
+<div class="col-4">
+<h6 class="fw-bold mb-3 d-flex align-items-center gap-2 text-primary-theme">
+<span class="material-symbols-outlined fs-5">terminal</span> Technology Services
+</h6>
+<ul class="list-unstyled d-flex flex-column gap-2 small">
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#tech-services"><span class="me-2">•</span> Business Analysis</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#tech-services"><span class="me-2">•</span> Application Support</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#tech-services"><span class="me-2">•</span> QA &amp; Testing</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#tech-services"><span class="me-2">•</span> Data Validation</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="services.html#tech-services"><span class="me-2">•</span> Process Optimization</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="bg-surface-muted p-3 text-center border-top border-light">
+<a class="text-decoration-none fw-bold d-flex justify-content-center align-items-center gap-2" href="services.html" style="color: var(--theme-primary-container);">
+Explore All Services <span class="material-symbols-outlined fs-6">arrow_forward</span>
+</a>
+</div>
+</div>
+</li>
+<!-- Solutions Mega Menu -->
+<li class="nav-item mega-menu-wrapper h-100 d-flex align-items-center">
+<a class="nav-link text-secondary-theme fw-bold d-flex align-items-center gap-1" href="solutions.html">
+Solutions <span class="material-symbols-outlined fs-6">expand_more</span>
+</a>
+<div class="mega-menu-content mega-menu-solutions text-start" style="width: 780px;">
+<div class="p-4">
+<div class="row g-4">
+<div class="col-4">
+<h6 class="fw-bold mb-3 d-flex align-items-center gap-2 text-primary-theme">
+<span class="material-symbols-outlined fs-5">shield</span> Payer Solutions
+</h6>
+<ul class="list-unstyled d-flex flex-column gap-2 small">
+<li><a class="text-decoration-none text-secondary-theme" href="solutions.html#claims"><span class="me-2">•</span> Claims Administration</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="solutions.html#benefits"><span class="me-2">•</span> Benefits Configuration</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="solutions.html#provider-network"><span class="me-2">•</span> Provider &amp; Network</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="solutions.html#testing-qa"><span class="me-2">•</span> Claims Testing &amp; QA</a></li>
+</ul>
+</div>
+<div class="col-4">
+<h6 class="fw-bold mb-3 d-flex align-items-center gap-2 text-primary-theme">
+<span class="material-symbols-outlined fs-5">medication</span> Provider Solutions
+</h6>
+<ul class="list-unstyled d-flex flex-column gap-2 small">
+<li><a class="text-decoration-none text-secondary-theme" href="solutions.html#rcm"><span class="me-2">•</span> Revenue Cycle Management</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="solutions.html#rcm"><span class="me-2">•</span> Medical Billing &amp; Coding</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="solutions.html#rcm"><span class="me-2">•</span> Claims &amp; Denial Management</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="solutions.html#managed-services"><span class="me-2">•</span> Practice Support</a></li>
+</ul>
+</div>
+<div class="col-4">
+<h6 class="fw-bold mb-3 d-flex align-items-center gap-2 text-primary-theme">
+<span class="material-symbols-outlined fs-5">memory</span> Tech &amp; Digital
+</h6>
+<ul class="list-unstyled d-flex flex-column gap-2 small">
+<li><a class="text-decoration-none text-secondary-theme" href="solutions.html#healthcare-it"><span class="me-2">•</span> Healthcare IT &amp; App Support</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="solutions.html#data-analytics"><span class="me-2">•</span> Data &amp; Analytics</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="solutions.html#healthcare-it"><span class="me-2">•</span> Process Automation</a></li>
+<li><a class="text-decoration-none text-secondary-theme" href="solutions.html#managed-services"><span class="me-2">•</span> Managed Operations</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="bg-surface-muted p-3 text-center border-top border-light">
+<a class="text-decoration-none fw-bold d-flex justify-content-center align-items-center gap-2" href="solutions.html" style="color: var(--theme-primary-container);">
+Explore All Solutions <span class="material-symbols-outlined fs-6">arrow_forward</span>
+</a>
+</div>
+</div>
+</li>
+<li class="nav-item"><a class="nav-link text-secondary-theme fw-bold" href="industries.html">Industries</a></li>
+<li class="nav-item"><a class="nav-link text-secondary-theme fw-bold" href="about.html">About Us</a></li>
+<li class="nav-item"><a class="nav-link text-secondary-theme fw-bold" href="resources.html">Resources</a></li>
+</ul>
+</div>
+<!-- Actions -->
+<div class="d-none d-lg-flex align-items-center gap-3">
+<a class="text-decoration-none text-primary-theme fw-bold active-nav" href="contact.html">Contact Us</a>
+<a class="btn btn-primary-theme rounded-3 px-4 py-2" href="contact.html">Book a Free Consultation</a>
+</div>
+</div>
+</header>
+
+<!-- Contact Hero Header -->
+<section class="page-hero">
+<div class="page-hero-overlay"></div>
+<div class="container-xl position-relative z-index-1 text-center">
+<span class="badge-theme-light mb-3" data-aos="fade-up">
+<span class="material-symbols-outlined fs-6">headset_mic</span> Get in Touch
+</span>
+<h1 class="display-4 font-heading fw-bold mb-4" data-aos="fade-up" data-aos-delay="100">
+    Let's Connect &amp; Solve Your Healthcare Operations
+</h1>
+<p class="lead text-secondary-theme mx-auto mb-4" style="max-width: 820px;" data-aos="fade-up" data-aos-delay="200">
+    Whether you are a Healthcare Payer requiring claims testing &amp; configuration support, or a Healthcare Provider seeking RCM &amp; billing optimization, MedGen is here to assist.
+</p>
+</div>
+</section>
+
+<!-- Main Contact Form & Details Section -->
+<section class="py-section">
+<div class="container-xl">
+<div class="row g-5">
+
+<!-- Form Column -->
+<div class="col-lg-7" data-aos="fade-right">
+<div class="bg-white p-4 p-md-5 rounded-3xl border shadow-sm">
+<h3 class="font-heading mb-2">Book a Free Consultation</h3>
+<p class="small text-secondary-theme mb-4">Fill out the form below and a MedGen healthcare specialist will get back to you within 24 business hours.</p>
+
+<form id="contactForm">
+<div class="row g-3">
+<div class="col-md-6">
+    <label class="form-label small fw-bold text-dark">Full Name *</label>
+    <input type="text" class="form-control py-2" placeholder="e.g. Sarah Jenkins" required/>
+</div>
+<div class="col-md-6">
+    <label class="form-label small fw-bold text-dark">Work Email Address *</label>
+    <input type="email" class="form-control py-2" placeholder="sarah@healthorg.com" required/>
+</div>
+<div class="col-md-6">
+    <label class="form-label small fw-bold text-dark">Phone Number</label>
+    <input type="tel" class="form-control py-2" placeholder="+1 (555) 000-0000"/>
+</div>
+<div class="col-md-6">
+    <label class="form-label small fw-bold text-dark">Organization Name</label>
+    <input type="text" class="form-control py-2" placeholder="Company or Practice Name"/>
+</div>
+<div class="col-12">
+    <label class="form-label small fw-bold text-dark">Primary Service of Interest</label>
+    <select class="form-select py-2">
+        <option value="payer">Payer Services (Claims, Benefits, Provider Config)</option>
+        <option value="provider">Provider Services (RCM, Billing, Coding, Denials)</option>
+        <option value="tech">Healthcare Technology &amp; QA Support</option>
+        <option value="audit">Free Revenue Cycle / Operational Audit</option>
+        <option value="other">General Inquiry / Partnership</option>
+    </select>
+</div>
+<div class="col-12">
+    <label class="form-label small fw-bold text-dark">Your Message or Requirements *</label>
+    <textarea class="form-control py-2" rows="5" placeholder="Tell us about your healthcare operational challenges or project timeline..." required></textarea>
+</div>
+<div class="col-12 mt-4">
+    <button type="submit" class="btn btn-primary-theme w-100 py-3 rounded-3 font-heading fw-bold fs-6">
+        Submit Request &amp; Book Consultation
+    </button>
+</div>
+</div>
+</form>
+
+<div id="contactFormSuccess" class="alert alert-success mt-4 rounded-3 d-none" role="alert">
+    <div class="d-flex align-items-center gap-2">
+        <span class="material-symbols-outlined fs-4">check_circle</span>
+        <div>
+            <strong>Thank you for contacting MedGen!</strong>
+            <p class="small mb-0">Your request has been received. Our team will review your details and reach out within 24 hours.</p>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+
+<!-- Info Cards Column -->
+<div class="col-lg-5" data-aos="fade-left">
+<div class="d-flex flex-column gap-4">
+
+<div class="contact-info-card">
+    <div class="d-flex align-items-center gap-3 mb-3">
+        <div class="icon-box-primary">
+            <span class="material-symbols-outlined fs-4">mail</span>
+        </div>
+        <div>
+            <h6 class="fw-bold mb-0">Email Inquiries</h6>
+            <p class="small text-secondary-theme mb-0">Direct operational contact</p>
+        </div>
+    </div>
+    <a href="mailto:contact@medgenconsultancy.com" class="text-primary-theme fw-bold text-decoration-none">contact@medgenconsultancy.com</a>
+</div>
+
+<div class="contact-info-card">
+    <div class="d-flex align-items-center gap-3 mb-3">
+        <div class="icon-box-primary">
+            <span class="material-symbols-outlined fs-4">call</span>
+        </div>
+        <div>
+            <h6 class="fw-bold mb-0">Phone Line</h6>
+            <p class="small text-secondary-theme mb-0">Monday – Friday, 8am – 6pm EST</p>
+        </div>
+    </div>
+    <a href="tel:18005556334" class="text-primary-theme fw-bold text-decoration-none">+1 (800) 555-MEDGEN</a>
+</div>
+
+<div class="contact-info-card">
+    <div class="d-flex align-items-center gap-3 mb-3">
+        <div class="icon-box-primary">
+            <span class="material-symbols-outlined fs-4">location_on</span>
+        </div>
+        <div>
+            <h6 class="fw-bold mb-0">Operational Headquarters</h6>
+            <p class="small text-secondary-theme mb-0">US Operations &amp; Healthcare Delivery Hubs</p>
+        </div>
+    </div>
+    <p class="small text-secondary-theme mb-0">Serving Healthcare Payers &amp; Providers Nationwide</p>
+</div>
+
+<div class="p-4 bg-gradient-premium rounded-2xl border shadow-sm">
+    <h6 class="font-heading text-primary-theme mb-3 d-flex align-items-center gap-2">
+        <span class="material-symbols-outlined">shield</span> Compliance &amp; Confidentiality
+    </h6>
+    <p class="small text-secondary-theme mb-3">
+        MedGen strictly adheres to HIPAA data privacy mandates, Business Associate Agreements (BAAs), and SOC2 operational standards across all client interactions.
+    </p>
+    <div class="d-flex gap-3">
+        <span class="badge bg-white text-dark border p-2 small fw-bold">HIPAA Compliant</span>
+        <span class="badge bg-white text-dark border p-2 small fw-bold">SOC2 Certified</span>
+    </div>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- FAQs Section -->
+<section class="py-section bg-surface-muted">
+<div class="container-xl">
+<div class="text-center mb-5">
+<span class="badge-theme-light mb-2">Common Questions</span>
+<h2 class="display-6 font-heading">Frequently Asked Questions</h2>
+</div>
+<div class="max-w-75 mx-auto" style="max-width: 860px;">
+<div class="accordion" id="faqContactAccordion">
+
+<div class="accordion-item shadow-sm">
+<button class="faq-accordion-toggle" type="button" aria-expanded="true" data-target="faqContactOne">
+    <span>How quickly can MedGen onboard our team or project?</span>
+    <span class="material-symbols-outlined">expand_more</span>
+</button>
+<div class="faq-accordion-content" id="faqContactOne">
+    Depending on scope, dedicated team extension or specialized project support can be deployed within 1 to 2 weeks following initial workflow mapping and BAA execution.
+</div>
+</div>
+
+<div class="accordion-item shadow-sm">
+<button class="faq-accordion-toggle" type="button" aria-expanded="false" data-target="faqContactTwo">
+    <span>What is involved in a Free Operational Audit?</span>
+    <span class="material-symbols-outlined">expand_more</span>
+</button>
+<div class="faq-accordion-content" id="faqContactTwo" hidden>
+    Our audit analyzes sample claim data, rejection codes, benefit configuration rules, or denial patterns to identify root cause revenue leaks and workflow bottlenecks—with zero obligation.
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- Premium Footer -->
+<footer class="premium-footer py-5">
+<div class="container-xl pt-4">
+<div class="row g-5 mb-5">
+<!-- Brand Column -->
+<div class="col-lg-4 col-12">
+<a class="text-decoration-none text-white fs-3 font-heading fw-bold d-flex align-items-center gap-2 mb-4" href="index.html">
+<span class="material-symbols-outlined fs-2" style="color: var(--theme-primary-container);">medical_services</span>
+MedGen Consultancy
+</a>
+<p class="small mb-4">
+US Healthcare Expertise. Payer &amp; Provider Solutions. Technology-Enabled Operations. We optimize healthcare operations and revenue cycles for modern payers and providers across the US ecosystem.
+</p>
+<div class="d-flex gap-3">
+<a class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center text-white border-0 bg-dark" href="#" style="width: 40px; height: 40px;">
+<span class="material-symbols-outlined fs-6">share</span>
+</a>
+<a class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center text-white border-0 bg-dark" href="#" style="width: 40px; height: 40px;">
+<span class="material-symbols-outlined fs-6">link</span>
+</a>
+<a class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center text-white border-0 bg-dark" href="contact.html" style="width: 40px; height: 40px;">
+<span class="material-symbols-outlined fs-6">mail</span>
+</a>
+</div>
+</div>
+<!-- Links Columns -->
+<div class="col-lg-2 col-md-4 col-6">
+<h5 class="text-white mb-4 fs-6 d-flex align-items-center gap-2">
+Company
+</h5>
+<ul class="list-unstyled d-flex flex-column gap-3 small fw-bold">
+<li><a class="text-decoration-none" href="about.html">About Us</a></li>
+<li><a class="text-decoration-none" href="services.html">Services</a></li>
+<li><a class="text-decoration-none" href="solutions.html">Solutions</a></li>
+<li><a class="text-decoration-none" href="industries.html">Industries</a></li>
+<li><a class="text-decoration-none" href="resources.html">Resources</a></li>
+<li><a class="text-decoration-none" href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-4 col-6">
+<h5 class="text-white mb-4 fs-6 d-flex align-items-center gap-2">
+Services
+</h5>
+<ul class="list-unstyled d-flex flex-column gap-3 small fw-bold">
+<li><a class="text-decoration-none" href="services.html#payer-services">Payer Services</a></li>
+<li><a class="text-decoration-none" href="services.html#provider-services">Provider Services</a></li>
+<li><a class="text-decoration-none" href="services.html#tech-services">Healthcare IT</a></li>
+<li><a class="text-decoration-none" href="solutions.html#rcm">RCM &amp; Billing</a></li>
+</ul>
+</div>
+<!-- Newsletter -->
+<div class="col-lg-4 col-md-4">
+<h5 class="text-white mb-4 fs-6 d-flex align-items-center gap-2">
+Get a Free Audit
+</h5>
+<p class="small mb-3">Uncover hidden revenue leaks &amp; operational efficiency gains with our comprehensive healthcare audit. No commitment required.</p>
+<form action="contact.html" method="get">
+<div class="input-group footer-newsletter-form">
+<input aria-label="Work Email Address" class="form-control bg-dark border-secondary text-white" placeholder="Work Email Address" required="" type="email"/>
+<button class="btn btn-primary-theme fw-bold px-4" type="submit">Request Audit</button>
+</div>
+</form>
+</div>
+</div>
+<!-- Legal Bottom -->
+<div class="footer-bottom border-top border-secondary pt-4 mt-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-4">
+<div class="footer-compliance d-flex gap-4">
+<div class="d-flex align-items-center gap-2 border border-secondary rounded px-3 py-1 small">
+<span class="material-symbols-outlined fs-6">verified_user</span>
+<span class="fw-bold">HIPAA Compliant</span>
+</div>
+<div class="d-flex align-items-center gap-2 border border-secondary rounded px-3 py-1 small">
+<span class="material-symbols-outlined fs-6">shield_locked</span>
+<span class="fw-bold">SOC2 Certified</span>
+</div>
+</div>
+<div class="footer-policy-links d-flex gap-4 small">
+<a class="text-decoration-none text-inherit" href="#">Privacy Policy</a>
+<a class="text-decoration-none text-inherit" href="#">Terms of Service</a>
+<a class="text-decoration-none text-inherit" href="#">Cookie Policy</a>
+<span>© 2026 MedGen Consultancy. All rights reserved.</span>
+</div>
+</div>
+</div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="js/script.js"></script>
+<script>
+  document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('contactFormSuccess').classList.remove('d-none');
+    this.reset();
+  });
+</script>
+</body>
+</html>
