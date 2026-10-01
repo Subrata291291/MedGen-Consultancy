@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" width="280" height="60">
+  <defs>
+    <linearGradient id="revonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ab351a" />
+      <stop offset="100%" stop-color="#f56a4a" />
+    </linearGradient>
+  </defs>
+  <!-- Emblem Icon: Stylized R + Growth Pulse + Medical Cross -->
+  <g transform="translate(5, 5)">
+    <rect x="0" y="0" width="50" height="50" rx="12" fill="url(#revonGrad)" />
+    <!-- R + Pulse Arrow -->
+    <path d="M15 37 V13 H26 C31 13 34 16 34 20 C34 24 31 26 26 26 H15" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M22 26 L34 37" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+    <!-- Ascending Trend Cross Accent -->
+    <path d="M30 15 H38 M34 11 V19" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <!-- Brand Typography -->
+  <text x="68" y="34" font-family="'Outfit', sans-serif" font-weight="700" font-size="26" fill="#1c1b1b">
+    Rev<tspan fill="#f56a4a">On</tspan>
+  </text>
+  <text x="69" y="47" font-family="'Inter', sans-serif" font-weight="600" font-size="9" fill="#526069" letter-spacing="2">
+    BUSINESS SOLUTIONS
+  </text>
+</svg>
